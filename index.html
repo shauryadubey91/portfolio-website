@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaurya Dubey | Aspiring AI/ML Engineer </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">Shaurya</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Shaurya Dubey</span></h1>
+        <h2>Aspiring AI/ML Engineer</h2>
+        <a href="#projects" class="btn">View Projects</a>
+
+    </section>
+
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+        <img height="500" src="shaurya.jpeg" alt="shaurya" class="shaurya">
+
+        <div class="about-text">
+            <h3>I'm Shaurya Dubey</h3>
+            <p>
+                I'm a CSE (AI & ML) student, working toward becoming a skilled Machine Learning Engineer. I enjoy learning how technology can solve real-world problems. Currently, I’m building strong foundations.
+                My long-term goal is to work in top tech companies and build AI-powered applications that can help people and make a real impact.
+            </p>
+
+            <a href="#skills" class="btn">My Skills</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-box">
+
+        <div class="skill">
+            <p>python</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>C</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="weather-section">
+  <h2 class="section-title">Weather App</h2>
+
+  <input id="cityInput" type="text" placeholder="Enter city name">
+  <button class="btn" onclick="getWeather()">Get Weather</button>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
+
+  <a href="https://weather-shaurya.netlify.app"
+   target="_blank"
+   class="btn">
+   Live Demo
+</a>
+
+
+  <div class="weather-info">
+    <h3 id="cityName"></h3>
+    <p id="temp"></p>
+    <p id="humidity"></p>
+    <p id="condition"></p>
+    <p id="errorMsg" style="color:red;"></p>
+    <img src="weather.jpeg" width="120">
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>Made by Shaurya Dubey</p>
+
+ <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shaurya-dubey-435645395/" target="_blank" rel="noopener noreferrer">
+    <img height="100" src="Linkedin.jpeg" alt="Linkedin"></a>
+
+    <a href="https://www.instagram.com/im_shxurya/" target="_blank" rel="noopener noreferrer">
+    <img height="100" src="instagram.jpeg" alt="Instagram"></a>
+
+    <a href="https://github.com/shauryadubey91" target="_blank" rel="noopener noreferrer">
+    <img height="100" src="Github.jpeg" alt="Github"></a>
+</div>
+
+
+    <p>&copy; 2025 - All Rights Reserved</p>
+</footer>
+
+<nav class="navbar">
+    <h2 class="logo">Shaurya</h2>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="hamburger">
+        
+    </div>
+</nav>
+
+<img id="weatherIcon" width="80" style="margin:10px auto; display:none;">
+
+<p id="errorMsg" style="color: red; margin: 5px 0;"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>
