@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaurya Dubey | Aspiring AI/ML Engineer </title>
+    <title>Shaurya Dubey | AI/ML Engineer </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
     <h2 class="logo">Shaurya</h2>
-    <ul>
+    <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="hamburger"></div>
 </nav>
 
     <section id="home" class="hero">
         <h1>Hello, I'm <span>Shaurya Dubey</span></h1>
-        <h2>Aspiring AI/ML Engineer</h2>
+        <h2> Aspiring AI / ML Engineer </h2>
         <a href="#projects" class="btn">View Projects</a>
-
     </section>
 
 
@@ -32,11 +32,11 @@
 
     <div class="about-content">
         <img height="500" src="shaurya.jpeg" alt="shaurya" class="shaurya">
-
         <div class="about-text">
-            <h3>I'm Shaurya Dubey</h3>
+            <h3>Shaurya Dubey</h3>
             <p>
-                I'm a CSE (AI & ML) student, working toward becoming a skilled Machine Learning Engineer. I enjoy learning how technology can solve real-world problems. Currently, I’m building strong foundations.
+                I'm a CSE (AI & ML) student, working toward becoming a skilled Machine Learning Engineer. I enjoy building AI-powered applications and data-driven solutions 
+                that can solve real-world problems using Machine Learning. Currently, I’m building strong foundations.
                 My long-term goal is to work in top tech companies and build AI-powered applications that can help people and make a real impact.
             </p>
 
@@ -48,16 +48,13 @@
 
 <section id="skills" class="skills">
     <h2 class="section-title">My Skills</h2>
-
     <div class="skills-box">
-
         <div class="skill">
             <p>python</p>
             <div class="progress">
                 <div class="progress-bar" style="width: 90%;"></div>
             </div>
         </div>
-
         <div class="skill">
             <p>HTML</p>
             <div class="progress">
@@ -90,27 +87,28 @@
 </section>
 
 <section id="projects" class="weather-section">
-  <h2 class="section-title">Weather App</h2>
+  <h2 class="section-title"> AI-Powered Weather Recommendation System </h2>
+  <p class="desc">
+    Uses real-time weather data with AI decision logic to suggest smart actions.
+  </p>
 
   <input id="cityInput" type="text" placeholder="Enter city name">
   <button class="btn" onclick="getWeather()">Get Weather</button>
   <a href="resume.pdf" class="btn" download>Download Resume</a>
 
-  <a href="https://weather-shaurya.netlify.app"
+  <a href="https://shaurya-portfolio-website.netlify.app"
    target="_blank"
    class="btn">
    Live Demo
 </a>
 
-
   <div class="weather-info">
+    <p id="aiSuggestion"></p>
     <h3 id="cityName"></h3>
     <p id="temp"></p>
     <p id="humidity"></p>
     <p id="condition"></p>
-    <p id="errorMsg" style="color:red;"></p>
-    <img src="weather.jpeg" width="120">
-
+    <p id="errorMsg"  class="error" style="color:red;"></p>
   </div>
 </section>
 
