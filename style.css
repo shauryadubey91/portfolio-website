@@ -20,21 +20,6 @@ body {
     padding: 20px;
 }
 
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-.hero h1 span {
-    color: #0ff;  /* Neon Blue Water Glow */
-    text-shadow: 0 0 10px #0ff;
-}
-
-.hero h2 {
-    font-size: 1.5rem;
-    color: #0ff;
-    margin-bottom: 20px;
-}
 
 .btn {
     padding: 12px 25px;
@@ -63,12 +48,6 @@ body {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
     z-index: 100;
-}
-
-.logo {
-    font-size: 1.7rem;
-    color: #0ff;
-    text-shadow: 0 0 8px #0ff;
 }
 
 .navbar ul {
@@ -335,4 +314,11 @@ body {
 .icon:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 10px #0ff);
+}
+
+#aiSuggestion{
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
 }
